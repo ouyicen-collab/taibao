@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>傳說與民俗 - 太保旅遊去</title>
+<link rel="stylesheet" href="commonstyle.css">
+<style>
+.container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1; /* 讓內容區撐開，把 Footer 壓到底部 */
+        }
+
+nav li:hover .dropdown {
+    display: block;
+}
+.dropdown::before {
+    content: "";
+    position: absolute;
+    top: -20px; /* 向上延伸出一段透明感應區 */
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+/* --- 景點卡片 --- */
+        .attraction-card {
+            display: flex;
+            align-items: center;
+            background: white;
+            margin-bottom: 60px;
+            gap: 40px;
+            padding: 30px; /* 增加內距讓畫面更舒服 */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .attraction-card.reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* --- 圖片區域 --- */
+        .card-image {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            justify-content: center; /* 讓圖片容器置中 */
+        }
+
+        .card-image img {
+            width: 100%;
+            max-width: 400px; /* 限制圖片最大寬度，避免過大 */
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .card-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* --- 文字區域 --- */
+        .card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* 紅色修正：標題置中 */
+        .card-title {
+            font-size: 1.5rem;
+            color: #8B5A2B;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            padding-left: 100px;
+            padding-right: 100px;
+            /* 置中關鍵設定 */
+            align-self: center; 
+            text-align: center;
+        }
+
+        /* 藍色修正：文字加粗 */
+        .card-text {
+            text-align: justify;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            color: #555;
+            font-weight: 700; /* 加粗設定 */
+            line-height: 1.8; /* 行距稍微加大讓粗體字更好讀 */
+            padding-right: 20px;
+        }
+
+.mascot {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.mascot img {
+    width: 1600px;
+}
+
+.section-title 
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+ footer {
+            background-color: #8B5A2B;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: auto; /* 確保置底 */
+        }
+
+        /* footer h3 { 
+            margin-bottom: 15px;
+            color: #8b6b52;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 5px;
+        }    */
+</style>
+</head>
+<body>
+<div class="sticky-wrapper">   
+    <div class="top-bar">
+        <a href="../index.html">回首頁</a><a href="#">回最上方</a>
+    </div>
+<header>
+    <div style="display: flex; align-items: center;">
+        <img src="../logo.png" alt="吉祥物" style="height: 150px; margin-right: 20px; margin-bottom: 10px;">  
+        <!-- <h2 style="font-size: 28px;">太保旅遊</h2> -->
+    </div>   
+    <nav>
+        <ul>
+            <li>
+                <a href="../taibaointro/taibaointro.html" style="color:white; text-decoration:none;">
+                太保簡介</a>
+            </li>
+            <li>
+                <a href="../h2ptaibao/h2ptaibao.html" style="color:white; text-decoration:none;">
+                太保怎麼玩</a>
+            </li>
+            <li>
+              <a href="../location/location.html" style="color:white; text-decoration:none;">
+              地理位置</a>
+            </li>
+            <li>
+                <a href="../taibaotraditions/taibaotraditions.html" style="color:white; text-decoration:none;">
+                傳說與民俗</a>
+            </li>
+            <li>
+              <a href="../budget/budget.html" style="color:white; text-decoration:none;">
+              預算估計</a>
+            </li>       
+            <li>
+                <a href="../taibaogod/taibaogod.html" style="color:white; text-decoration:none;">
+                宗教信仰</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+</div> 
+    <main class="container">
+        
+        <div class="section-title">
+            <h2>傳說與民俗</h2>
+        </div>
+
+<article class="attraction-card">
+        <div class="card-image"> <img src="people.jpg" alt="朱一貴起事">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">朱一貴起事</h3>
+            <p class="card-text">
+                朱一貴起事發生於清代,對嘉義地區,包括現在的太保市,有直接影響。當時朱一貴號召地方百姓起義,掀起一波社會動盪,太保一帶也成為行動與防守的重要區域。這段歷史讓太保在臺灣歷史上留下痕跡,也反映早期居民面對困境時的勇氣與智慧。
+        </div>
+    </article>
+
+    <article class="attraction-card reverse">
+        <div class="card-image"> <img src="fire.png" alt="太保里火燈夜巡">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">太保里火燈夜巡</h3>
+            <p class="card-text">
+                太保里火燈夜巡是太保相當具有代表性的傳統民俗活動,通常在特定節慶期間舉行。夜晚時分,居民手持火燈走訪街巷,象徵驅邪避煞、守護地方平安,也展現社區凝聚力。對遊客而言,火燈夜巡不僅是一場視覺震撼的夜間活動,更能近距離感受太保在地文化的溫度與傳承。
+            </p>
+        </div>
+    </article>
+    </main>  
+     <footer>
+        <h3>Contact Us</h3>
+        <p>地址：嘉義縣太保市太保一路1號</p>
+        <p>電話：05-123-4567 | Email: service@taibao.travel</p>
+        <p>&copy; 2024 太保旅遊去 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
